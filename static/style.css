@@ -38,6 +38,7 @@ body {
 
 td {
     padding: 10px;
+    min-width: 120px;
 }
 
 body {

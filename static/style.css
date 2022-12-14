@@ -1,5 +1,5 @@
 .slidecontainer {
-    width: 250px;
+    width: 240px;
 }
 
 .slider {
@@ -37,8 +37,12 @@ body {
 }
 
 td {
-    padding: 10px;
-    min-width: 120px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.label {
+    width: 100px;
 }
 
 body {

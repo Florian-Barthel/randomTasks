@@ -20,11 +20,16 @@
             <h2>Create Task</h2>
             <table>
                 <tr>
-                    <td>{{ form_create.name_create.label }}</td>
-                    <td>{{ form_create.name_create(class="form-control", autocomplete="off", onfocus="this.value=''") }}</td>
+                    <td class="label">{{ form_create.name_create.label }}</td>
+                    <td>
+                        <div class="slidecontainer">
+                            {{ form_create.name_create(class="form-control", autocomplete="off",
+                            onfocus="this.value=''") }}
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td>{{ form_create.time_create.label }}</td>
+                    <td class="label">{{ form_create.time_create.label }}</td>
                     <td>
                         <div class="slidecontainer">
                             {{ form_create.time_create(min=0, max=10, class="slider", type="range") }}
@@ -32,7 +37,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>{{ form_create.energy_create.label }}</td>
+                    <td class="label">{{ form_create.energy_create.label }}</td>
                     <td>
                         <div class="slidecontainer">
                             {{ form_create.energy_create(min=0, max=10, class="slider", type="range") }}
@@ -40,7 +45,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>{{ form_create.priority_create.label }}</td>
+                    <td class="label">{{ form_create.priority_create.label }}</td>
                     <td>
                         <div class="slidecontainer">
                             {{ form_create.priority_create(min=0, max=10, class="slider", type="range") }}
@@ -60,7 +65,7 @@
             <h2>Get best matching Task</h2>
             <table>
                 <tr>
-                    <td>{{ form_best_match.time.label }}</td>
+                    <td class="label">{{ form_best_match.time.label }}</td>
                     <td>
                         <div class="slidecontainer">
                             {{ form_best_match.time(min=0, max=10, class="slider", type="range") }}
@@ -68,7 +73,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>{{ form_best_match.energy.label }}</td>
+                    <td class="label">{{ form_best_match.energy.label }}</td>
                     <td>
                         <div class="slidecontainer">
                             {{ form_best_match.energy(min=0, max=10, class="slider", type="range") }}
